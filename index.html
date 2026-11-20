@@ -1,0 +1,206 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#260e20"><title>For Anu ♡</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 15%,#642442,transparent 45%),linear-gradient(135deg,#190916,#35142d);color:#fff4f8;font-family:Poppins,sans-serif;overflow-x:hidden}button{cursor:pointer;font:inherit}
+#sky,#balloons,#confetti{position:fixed;inset:0;pointer-events:none}#sky{overflow:hidden;z-index:0}.star{position:absolute;width:2px;height:2px;background:white;border-radius:50%;opacity:.5;animation:twinkle 2s infinite alternate}@keyframes twinkle{to{opacity:.15}}
+.heart{position:absolute;bottom:-30px;color:#ffa9ca;animation:up 10s linear forwards}@keyframes up{to{transform:translateY(-110vh) rotate(180deg);opacity:0}}
+nav{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:12px;background:#190916c9;backdrop-filter:blur(15px);border-bottom:1px solid #ffffff18}.logo{font:30px 'Great Vibes';color:#ffc8df}.links{display:flex;flex-wrap:wrap;justify-content:center}.links button{background:none;border:0;color:#f5d9e6;border-radius:25px;padding:8px 10px;font-size:11px}.links button.active,.links button:hover{background:#e879a533}.music{border:1px solid #ffc4dc55;border-radius:24px;background:#ffffff10;color:white;padding:9px 12px}
+.page{display:none;position:relative;z-index:1;min-height:83vh;padding:45px 15px;align-items:center;justify-content:center;flex-direction:column;text-align:center;animation:fade .6s}.page.active{display:flex}@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.eyebrow{font-size:10px;letter-spacing:4px;color:#f5d89b;text-transform:uppercase;margin-bottom:18px}h1,h2{font-family:'Playfair Display';font-weight:400}h1{font-size:clamp(35px,8vw,72px);line-height:1.2}h2{font-size:clamp(28px,6vw,46px)}.script{font:clamp(60px,12vw,110px) 'Great Vibes';color:#ffc6dd}.lead{max-width:620px;color:#f2d8e5;line-height:1.9;font-size:14px;margin:16px auto}.btn{border:0;border-radius:28px;padding:13px 22px;background:linear-gradient(120deg,#f28ab5,#cb4d84);color:white;margin:8px;box-shadow:0 8px 25px #e56b9930}.outline{background:#ffffff08;border:1px solid #ffc6dd55;box-shadow:none}
+.panel{border:1px solid #ffc6dd30;background:#ffffff09;border-radius:22px;padding:22px;max-width:900px;width:100%}.count{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:24px}.unit{width:clamp(70px,15vw,115px);padding:16px;border:1px solid #ffc6dd35;border-radius:16px;background:#ffffff08}.unit b{display:block;font:clamp(25px,5vw,36px) 'Playfair Display';color:#f5d89b}.unit small{letter-spacing:2px;font-size:9px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px;max-width:920px;margin:22px auto;width:100%}.card{padding:23px;border:1px solid #ffc6dd25;border-radius:19px;background:#ffffff0a}.card h3{font:21px 'Playfair Display';color:#f5d89b;margin:10px}.card p{font-size:13px;line-height:1.8;color:#f3dce7}
+
+
+.envelope{width:min(340px,88vw);height:215px;position:relative;margin:35px auto;cursor:pointer}.env{position:absolute;bottom:0;height:175px;width:100%;background:#b84776;border-radius:7px;box-shadow:0 15px 35px #0005}.env:before{content:'';position:absolute;inset:0;background:#dc7099;clip-path:polygon(0 0,50% 60%,100% 0);z-index:2}.env:after{content:'💌';position:absolute;z-index:4;top:70px;left:45%;font-size:30px}.flap{position:absolute;inset:0;background:#f0a0bc;clip-path:polygon(0 0,100% 0,50% 65%);transform-origin:top;transition:.8s;z-index:3}.paper{position:absolute;bottom:10px;left:6%;width:88%;height:150px;background:#fff0e7;border-radius:5px;transition:.8s}.envelope.open .flap{transform:rotateX(180deg);z-index:1}.envelope.open .paper{transform:translateY(-120px)}
+.letter{display:none;text-align:left;max-width:680px;width:100%;background:linear-gradient(140deg,#fff5ec,#f8dce8);color:#633a51;padding:clamp(20px,5vw,35px);border-radius:20px}.letter.show{display:block;animation:fade .7s}.letter h2{text-align:center;font:44px 'Great Vibes';color:#ad3d6d}.letter p{font-size:14px;line-height:1.9;margin:12px 0}.sign{text-align:right;font:30px 'Great Vibes';color:#b13e70}
+.balloon{position:absolute;bottom:-130px;width:52px;height:68px;border-radius:50%;background:var(--c);box-shadow:inset -8px -6px 12px #0002,inset 6px 6px 10px #fff4;animation:fly var(--dur) linear forwards}.balloon:after{content:'';position:absolute;left:50%;top:68px;width:1px;height:100px;background:#ffffff55}@keyframes fly{to{transform:translateY(-120vh) translateX(var(--dx))}}
+footer{text-align:center;color:#d5aabd;font-size:11px;padding:20px;position:relative;z-index:1}
+
+/* Extra welcome magic: orbit rings, sparkles, shimmer and floating ribbons */
+.gate-orbit{position:absolute;width:min(78vw,430px);aspect-ratio:1;border:1px solid #ffc6dd55;border-radius:50%;animation:orbitSpin 18s linear infinite;pointer-events:none}
+.gate-orbit:before,.gate-orbit:after{content:'✦';position:absolute;color:#ffe6a8;text-shadow:0 0 14px #ffd76a;font-size:22px}
+.gate-orbit:before{top:8%;left:20%}.gate-orbit:after{bottom:12%;right:15%}
+@keyframes orbitSpin{to{transform:rotate(360deg)}}
+.gate-spark{position:absolute;pointer-events:none;color:#fff1b8;animation:sparkPop 2.8s ease-in-out infinite}
+@keyframes sparkPop{0%,100%{opacity:.15;transform:scale(.55) rotate(0)}50%{opacity:1;transform:scale(1.35) rotate(90deg)}}
+.gate-ribbon{font-size:clamp(18px,4vw,28px);letter-spacing:9px;color:#ffd7e7;animation:ribbonFloat 3.2s ease-in-out infinite}
+@keyframes ribbonFloat{0%,100%{transform:translateY(0) rotate(-2deg);opacity:.7}50%{transform:translateY(-9px) rotate(2deg);opacity:1}}
+.gate-title{animation:titleGlow 2.8s ease-in-out infinite alternate}
+@keyframes titleGlow{to{text-shadow:0 0 9px #ff8ab9,0 0 28px #ff8ab9,0 0 44px #ffd1e4}}
+.gate-sub{animation:fadeUp 1.2s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+/* NEW: full-screen heart welcome */
+#welcomeGate{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px;background:radial-gradient(circle at 50% 40%,#853354 0%,#3b142e 48%,#160812 100%);transition:opacity .9s,visibility .9s}
+#welcomeGate.hide{opacity:0;visibility:hidden;pointer-events:none}
+.gate-heart{font-size:clamp(90px,22vw,170px);line-height:1;filter:drop-shadow(0 0 22px #ff9bc9);animation:heartBeat 1.25s infinite}
+@keyframes heartBeat{0%,100%{transform:scale(1)}15%{transform:scale(1.16)}30%{transform:scale(1)}45%{transform:scale(1.1)}}
+.gate-title{font:clamp(32px,7vw,56px) 'Great Vibes';color:#ffd1e4;margin:16px 0 6px;text-shadow:0 0 18px #ff8ab9}
+.gate-sub{color:#ffe7f0;font-size:13px;letter-spacing:1px;margin:0 0 22px}
+#openGift{font-weight:500;letter-spacing:.5px;animation:softGlow 2s infinite alternate}
+@keyframes softGlow{to{box-shadow:0 0 28px #ff9bc9aa,0 0 50px #e56b9955}}
+.gate-heart.burst{animation:heartBurst .85s forwards}
+@keyframes heartBurst{to{transform:scale(12);opacity:0;filter:blur(8px)}}
+#petals{position:fixed;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+.petal{position:absolute;top:-35px;color:#ffb2cf;text-shadow:0 0 8px #ff8bb9;animation:petalFall var(--fall) linear forwards}
+@keyframes petalFall{to{transform:translate3d(var(--drift),110vh,0) rotate(650deg);opacity:.12}}
+.type-line{min-height:1.5em;color:#ffe0ec}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flip-wrap{perspective:1000px;width:min(560px,100%);margin:12px auto}
+.flip-card{position:relative;min-height:260px;transform-style:preserve-3d;transition:transform .85s;cursor:pointer}
+.flip-card.flipped{transform:rotateY(180deg)}
+.flip-face{position:absolute;inset:0;min-height:260px;backface-visibility:hidden;border:1px solid #ffc6dd55;border-radius:22px;padding:28px;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(140deg,#71304f,#35142d);box-shadow:0 15px 35px #0003}
+.flip-back{transform:rotateY(180deg);background:linear-gradient(140deg,#fff3e9,#f5c9dc);color:#69344f}
+.flip-back p{line-height:1.8}
+.cake-area{margin:24px auto 12px;position:relative;width:180px;height:145px}
+.cake-base{position:absolute;bottom:0;left:15px;width:150px;height:75px;border-radius:12px 12px 18px 18px;background:linear-gradient(#ffb2ce 0 18%,#d95791 18% 100%);box-shadow:inset 0 -8px #a83e70}
+.cake-top{position:absolute;bottom:68px;left:15px;width:150px;height:30px;border-radius:50%;background:#ffe1eb;border:4px solid #f6a4c2}
+.candle{position:absolute;bottom:96px;left:86px;width:10px;height:42px;border-radius:3px;background:repeating-linear-gradient(45deg,#fff 0 5px,#f08ab4 5px 10px);z-index:2}
+.flame{position:absolute;bottom:135px;left:82px;width:18px;height:25px;border-radius:60% 40% 60% 40%;background:#ffd76a;box-shadow:0 0 18px 8px #ffb74d88;transform:rotate(8deg);animation:flicker .45s infinite alternate}
+.flame.off{display:none}
+@keyframes flicker{to{transform:rotate(-8deg) scale(.88);opacity:.8}}
+#petalBurst{color:#ffc6dd}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+
+@media(max-width:600px){nav{justify-content:center}.logo{width:100%;text-align:center}.links{width:100%}.links button{padding:7px}.page{padding:35px 12px}}
+
+.memory-entry{background:linear-gradient(110deg,#b94d83,#e98ab2,#b94d83)!important;box-shadow:0 0 24px #f7a9cf55;animation:memoryGlow 2.4s ease-in-out infinite}
+@keyframes memoryGlow{0%,100%{box-shadow:0 0 12px #f7a9cf44;transform:translateY(0)}50%{box-shadow:0 0 28px #ffb5d8aa;transform:translateY(-3px)}}
+.memory-hub{overflow:hidden;position:relative}
+.memory-heart{font-size:64px;color:#ff9fc9;text-shadow:0 0 22px #ff9fc9;animation:hubPulse 1.4s ease-in-out infinite;line-height:1.3}
+@keyframes hubPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+.memory-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;width:min(760px,100%);margin:28px auto}
+.memory-choice{min-height:210px;padding:22px 16px;border:1px solid #ffc6dd88;border-radius:22px;background:linear-gradient(145deg,#ffffff18,#f5a7c51c);color:inherit;font:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;cursor:pointer;box-shadow:0 12px 35px #0002;transition:transform .35s,box-shadow .35s,border-color .35s;animation:choiceFloat 4s ease-in-out infinite}
+.memory-choice:nth-child(2){animation-delay:-2s}
+.memory-choice:hover{transform:translateY(-8px) scale(1.025);box-shadow:0 16px 40px #f58fbd44;border-color:#ffb4d5}
+.memory-choice-icon{font-size:38px;filter:drop-shadow(0 0 9px #ffafd1)}
+.memory-choice strong{font-size:18px;color:#ffd3e5}
+.memory-choice span:not(.memory-choice-icon){font-size:13px;opacity:.85}
+.memory-choice em{font-style:normal;color:#f5d89b;font-size:13px;margin-top:4px}
+@keyframes choiceFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media(max-width:600px){.memory-choice-grid{grid-template-columns:1fr;max-width:380px}.memory-choice{min-height:165px}}
+
+
+/* Photo-free animated note chapters */
+.note-stage{width:min(780px,100%);display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:24px auto}
+.note-orb{min-height:190px;padding:24px 18px;border:1px solid #ffd0e488;border-radius:24px;background:linear-gradient(145deg,#ffffff1c,#f18ab51c);box-shadow:0 15px 38px #0003;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;animation:noteFloat 4s ease-in-out infinite;position:relative;overflow:hidden}
+.note-orb:nth-child(2){animation-delay:-1.2s}.note-orb:nth-child(3){animation-delay:-2.4s}
+.note-orb:before{content:'';position:absolute;width:130px;height:130px;border-radius:50%;background:#ff9fc922;filter:blur(4px);animation:orbGlow 3s ease-in-out infinite}
+.note-icon{font-size:42px;filter:drop-shadow(0 0 12px #ffb4d5);animation:iconDance 3s ease-in-out infinite;z-index:1}
+.note-orb strong,.note-orb p{position:relative;z-index:1}.note-orb strong{font:22px 'Playfair Display';color:#ffe0ec}.note-orb p{font-size:13px;line-height:1.8;color:#f7dce8;margin:0}
+.note-quote{width:min(650px,100%);margin:14px auto;padding:22px;border-radius:20px;background:#ffffff0d;border:1px solid #f8c6dc66;font:clamp(20px,4vw,27px) 'Great Vibes';color:#ffe0ec;animation:quotePulse 3s ease-in-out infinite}
+.note-sparkles{font-size:25px;letter-spacing:12px;color:#ffe5a8;animation:sparkPop 2s infinite}
+@keyframes noteFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
+@keyframes orbGlow{0%,100%{transform:scale(.75);opacity:.35}50%{transform:scale(1.35);opacity:.85}}
+@keyframes iconDance{0%,100%{transform:translateY(0) rotate(-8deg) scale(1)}50%{transform:translateY(-8px) rotate(8deg) scale(1.12)}}
+@keyframes quotePulse{0%,100%{box-shadow:0 0 8px #ff9fc922}50%{box-shadow:0 0 28px #ff9fc966}}
+@media(max-width:600px){.note-orb{min-height:160px}.note-stage{grid-template-columns:1fr}}
+
+</style></head><body>
+<div id="welcomeGate" aria-label="Birthday welcome">
+<div class="gate-orbit"></div><span class="gate-spark" style="top:18%;left:17%">✧</span><span class="gate-spark" style="top:27%;right:16%;animation-delay:.8s">✦</span><span class="gate-spark" style="bottom:20%;left:22%;animation-delay:1.4s">✧</span><span class="gate-spark" style="bottom:17%;right:20%;animation-delay:.4s">✦</span><div class="gate-heart" id="gateHeart">💗</div><div class="gate-ribbon">♡ ✧ ♡ ✧ ♡</div>
+<div class="gate-title">A little world made just for you, Anu…</div>
+<p class="gate-sub">A tiny surprise, wrapped in love & memories</p><div style="font:clamp(22px,5vw,34px) 'Great Vibes';color:#ffe0ec;margin:0 0 15px;text-shadow:0 0 15px #ff8ab9">Happy Birthday to you in advance, Anu! 🎂</div>
+<button class="btn" id="openGift" onclick="openWelcome()">Tap to Open ❤️</button>
+</div>
+<div id="sky"></div><div id="balloons"></div><div id="petals"></div><canvas id="confetti"></canvas>
+<nav><div class="logo">A little world for Anu ♡</div><div class="links"><button class="active" onclick="go(0)">Welcome</button><button onclick="go(1)">Countdown</button><button onclick="go(2)">Wishes</button><button onclick="go(3)">Little Notes</button><button onclick="go(4)">Letter</button><button onclick="go(5)">Our Story</button><button onclick="go(6)">Memory Notes</button><button onclick="go(7)">Wish Jar</button><button onclick="go(8)">Birthday Card</button><button onclick="go(9)">Finale</button></div><button class="music" id="musicBtn" onclick="toggleMusic()">♫ Play Music</button></nav>
+<audio id="music" loop><source src="romantic.mp3" type="audio/mpeg"></audio>
+<main>
+<section class="page active" id="p0"><div class="eyebrow">A birthday surprise made with care</div><h1>For someone<br>very <span class="script" style="font-size:1.1em">special</span></h1><div class="script">Anu ❤️</div><h2 style="font:clamp(25px,5vw,38px) 'Great Vibes';color:#ffe0ec;margin:4px 0;text-shadow:0 0 16px #ff8ab9">Happy Birthday to you in advance! 🎂</h2><div style="font-size:55px;animation:pulse 2s infinite">✧ 🩷 ✧</div><p class="lead">A little universe of wishes, animations, and sweet words—to celebrate you and all the joy you bring.</p><p class="type-line" id="typeLine">Every memory has a little sparkle…</p><button class="btn" onclick="go(1)">Begin the surprise →</button><button class="btn outline" onclick="toggleMusic()">♫ Music</button></section>
+<section class="page" id="p1"><div class="eyebrow">The special date</div><h2>Counting down to <span class="script" style="font-size:1.2em">your day</span></h2><div class="panel"><div style="font-size:45px">🎂 ✨</div><div class="count"><div class="unit"><b id="d">--</b><small>DAYS</small></div><div class="unit"><b id="h">--</b><small>HOURS</small></div><div class="unit"><b id="m">--</b><small>MINUTES</small></div><div class="unit"><b id="s">--</b><small>SECONDS</small></div></div><p style="color:#f5d89b">25 DECEMBER • YOUR BIRTHDAY</p></div><p class="lead">You deserve kindness, laughter, peace, and every opportunity to grow into your dreams.</p><button class="btn" onclick="go(2)">Read your wishes →</button></section>
+<section class="page" id="p2"><div class="eyebrow">Little wishes to keep</div><h2>Little notes, <span class="script" style="font-size:1.2em">big smiles</span></h2><div class="grid"><div class="card"><div>🌷</div><h3>Keep blooming</h3><p>May you keep becoming the person you dream of, at your own pace and in your own beautiful way.</p></div><div class="card"><div>☀️</div><h3>Bright days</h3><p>May ordinary days surprise you with little joys, peaceful moments, and reasons to smile.</p></div><div class="card"><div>✨</div><h3>Dream boldly</h3><p>May your goals feel possible, your efforts meaningful, and your courage keep growing.</p></div><div class="card"><div>🫶</div><h3>Feel appreciated</h3><p>May you always be surrounded by people who respect you, cheer for you, and see your good heart.</p></div><div class="card"><div>🎀</div><h3>Little magic</h3><p>May this new year of your life be filled with wonderful surprises and memories worth keeping.</p></div><div class="card"><div>💌</div><h3>From me to you</h3><p>Thank you for the memories, laughs, and small moments that make life feel warmer.</p></div></div><button class="btn" onclick="go(3)">Explore little animated notes →</button></section>
+<section class="page" id="p3"><div class="eyebrow">Tiny words, endless warmth</div><h2>Little <span class="script" style="font-size:1.2em">animated notes</span> ✨</h2><p class="lead">A few little reminders, floating here just to make you smile.</p><div class="note-sparkles">✧ ✦ ✧ ✦ ✧</div><div class="note-stage"><article class="note-orb"><div class="note-icon">🌷</div><strong>Keep blooming</strong><p>Grow gently, dream freely, and let your own light shine.</p></article><article class="note-orb"><div class="note-icon">🦋</div><strong>Beautiful beginnings</strong><p>Every new day is another chance for something lovely.</p></article><article class="note-orb"><div class="note-icon">💗</div><strong>You are cherished</strong><p>Never forget how much kindness and happiness you deserve.</p></article></div><div class="note-quote" id="noteQuoteOne">“May your days be soft, bright, and full of little magic.”</div><button class="btn" onclick="rotateNote('noteQuoteOne')">Another sweet note ✨</button><button class="btn outline" onclick="go(4)">Open your letter 💌</button></section>
+<section class="page" id="p4"><div class="eyebrow">Written for this moment</div><h2>A letter for <span class="script" style="font-size:1.2em">Anu</span></h2><p class="lead">Tap the envelope to unfold a birthday note.</p><div class="envelope" id="envelope" onclick="openLetter()" role="button" tabindex="0"><div class="paper"></div><div class="env"><div class="flap"></div></div></div><p id="tap" style="color:#f5d89b">♡ TAP TO OPEN ♡</p><article class="letter" id="letter"><h2>Dear Anu,</h2><p>Happy Birthday! ❤️</p><p>Today is a lovely reminder that the world became a little brighter on the day you were born. I hope you take a moment to see how much you have grown, how many things you have overcome, and how many beautiful possibilities are still waiting for you.</p><p>Thank you for being part of so many memories that make me smile. The everyday conversations, silly laughs, little adventures, and quiet moments all have a special place in my heart.</p><p>For this new year of your life, I wish you calm on difficult days, confidence when you chase your dreams, good health, and happiness that feels genuine and lasting. May you never forget your own worth or stop believing in the wonderful things you can do.</p><p>I hope this small website makes you smile and reminds you that you are appreciated. Keep shining in your own way, keep being curious, and keep making memories that you'll look back on fondly.</p><p>Have the sweetest birthday, Anu. May 25 December be full of warmth, laughter, and magic. 🎂✨</p><p class="sign">With love & warm wishes ♡</p></article><button class="btn" style="margin-top:22px" onclick="go(5)">One last surprise →</button></section>
+
+<section class="page" id="p5"><div class="eyebrow">The little chapters we remember</div><h2>Our <span class="script" style="font-size:1.2em">story so far</span></h2>
+<div class="grid">
+<div class="card"><div>🌸</div><h3>First little moments</h3><p>Some memories start quietly, and later become the ones we smile about the most.</p></div>
+<div class="card"><div>💌</div><h3>Little reminders</h3><p>Some words stay with us and make ordinary days feel a little brighter.</p></div>
+<div class="card"><div>🌙</div><h3>Ordinary magic</h3><p>Not every beautiful memory needs a grand plan. Sometimes the simplest days are special.</p></div>
+<div class="card"><div>🌱</div><h3>Growing forward</h3><p>May life keep giving us chances to learn, grow, and make new memories with kindness.</p></div>
+</div><p class="lead">This page is a little reminder that stories are made one moment at a time. Save a few sweet words on the next page.</p><button class="btn" onclick="go(6)">Write a memory note →</button></section>
+
+<section class="page" id="p6"><div class="eyebrow">A little memory scrapbook</div><h2>Memory <span class="script" style="font-size:1.2em">notes</span></h2>
+<div class="panel" style="max-width:650px"><p class="lead">Write a favourite moment or a sweet message, then add it to this little scrapbook. Notes stay visible while this page is open.</p>
+<textarea id="memoryInput" placeholder="A moment I want to remember..." style="width:100%;min-height:105px;border-radius:14px;padding:14px;background:#ffffff12;border:1px solid #ffc6dd44;color:white;font:inherit"></textarea>
+<button class="btn" onclick="addMemory()">Save this memory ♡</button><div id="memoryNotes" class="grid" style="grid-template-columns:1fr;margin-top:15px"></div></div>
+<button class="btn" onclick="go(7)">Open the wish jar →</button></section>
+
+<section class="page" id="p7"><div class="eyebrow">Pick a little wish</div><h2>The birthday <span class="script" style="font-size:1.2em">wish jar</span></h2>
+<div class="panel" style="max-width:600px"><div style="font-size:70px">🏺✨</div><p class="lead">Tap to draw a tiny wish for the year ahead.</p><div class="card" id="wishCard" style="min-height:100px;display:flex;align-items:center;justify-content:center"><p id="wishText">Your wish is waiting inside…</p></div><button class="btn" onclick="drawWish()">Draw a wish ✨</button></div><button class="btn" onclick="go(8)">Open your birthday card →</button></section>
+
+<section class="page" id="p8"><div class="eyebrow">A little card, a big wish</div><div style="font-size:55px">💝</div><h2>Birthday card <span class="script" style="font-size:1.2em">for Anu</span></h2>
+<div class="flip-wrap"><div class="flip-card" id="flipCard" onclick="this.classList.toggle('flipped')" role="button" tabindex="0" aria-label="Flip birthday card">
+<div class="flip-face"><div style="font-size:55px">💝</div><h2 style="margin:10px">For Anu</h2><p class="lead">Tap to flip your birthday card ✨</p><div style="font-size:30px">♡ 🎀 ♡</div></div>
+<div class="flip-face flip-back"><div style="font-size:40px">🌷</div><div style="font:38px 'Great Vibes';color:#ad3d6d">You deserve a beautiful year ahead ♡</div><p>May your days have music, your heart have peace, your plans have possibility, and your life have many reasons to celebrate. Keep being proud of your progress and enjoy the little things along the way.</p></div></div></div><button class="btn" onclick="party();go(9)">Go to the grand finale 🎉</button></section>
+<section class="page" id="p9"><div class="eyebrow">Make a wish—let the balloons fly</div><div style="font-size:60px">🎈🎂🎈</div><h1>Happy Birthday<br><span class="script">Anu!</span></h1><p class="lead">May your next chapter be full of wonderful discoveries, beautiful friendships, laughter, success, and days that feel like sunshine.</p>
+<div class="cake-area" aria-label="Birthday cake"><div class="cake-base"></div><div class="cake-top"></div><div class="candle"></div><div class="flame" id="cakeFlame"></div></div>
+<button class="btn" onclick="lightCandle()">Light the candle 🕯️</button><button class="btn" onclick="party()">Balloons & confetti! 🎉</button><button class="btn memory-entry" onclick="go(12)">♡ Our Memories · Open Animated Notes ♡</button><button class="btn outline" onclick="go(0)">Start again ♡</button><div class="script" style="font-size:35px;color:#f5d89b;margin-top:20px">A little universe, just for your birthday.</div></section>
+
+<section class="page" id="p10"><div class="eyebrow">A note wrapped in starlight</div><h2>Animated Notes <span class="script" style="font-size:1.2em">Part One</span> ✨</h2><div class="note-sparkles">✦ ♡ ✧ ♡ ✦</div><div class="note-stage"><article class="note-orb"><div class="note-icon">🌙</div><strong>For peaceful nights</strong><p>May your heart find calm, even after the busiest days.</p></article><article class="note-orb"><div class="note-icon">🌻</div><strong>For brighter mornings</strong><p>May each sunrise bring fresh hope and a reason to smile.</p></article><article class="note-orb"><div class="note-icon">⭐</div><strong>For every dream</strong><p>Keep believing in the beautiful things you are working toward.</p></article></div><div class="note-quote" id="noteQuoteTwo">“You deserve a life sprinkled with joy, courage, and wonder.”</div><button class="btn" onclick="rotateNote('noteQuoteTwo')">Surprise me with a note 💫</button><button class="btn outline" onclick="go(11)">Read the next chapter →</button></section>
+<section class="page" id="p11"><div class="eyebrow">A little sunshine for you</div><h2>Animated Notes <span class="script" style="font-size:1.2em">Part Two</span> 💞</h2><div class="note-sparkles">♡ ✧ ✦ ✧ ♡</div><div class="note-stage"><article class="note-orb"><div class="note-icon">🫶</div><strong>Always be yourself</strong><p>Your own way of being is worth celebrating.</p></article><article class="note-orb"><div class="note-icon">🎀</div><strong>Collect happy moments</strong><p>Let laughter, kindness, and little surprises fill your days.</p></article><article class="note-orb"><div class="note-icon">🕊️</div><strong>Choose your peace</strong><p>May you always find space to rest, breathe, and begin again.</p></article></div><div class="note-quote" id="noteQuoteThree">“May the next chapter be even more beautiful than you imagine.”</div><button class="btn" onclick="rotateNote('noteQuoteThree')">One more little note 🌸</button><button class="btn outline" onclick="party();go(9)">Back to the birthday finale 🎉</button></section>
+<section class="page memory-hub" id="p12"><div class="eyebrow">A little pause full of love</div><div class="memory-heart">♡</div><h2>Our <span class="script">Little Notes</span> 💗</h2><p class="lead">Choose a tiny chapter of animated wishes, kind words, and little reminders made to brighten your day.</p><div class="memory-choice-grid"><button class="memory-choice" onclick="go(10)"><span class="memory-choice-icon">🌙✨</span><strong>Animated Notes · Part One</strong><span>Gentle wishes and dreamy reminders</span><em>Open notes →</em></button><button class="memory-choice" onclick="go(11)"><span class="memory-choice-icon">🌷💞</span><strong>Animated Notes · Part Two</strong><span>More little words to keep close</span><em>Open notes →</em></button></div><button class="btn outline" onclick="go(9)">← Back to Birthday Finale</button></section>
+</main><footer>Made with care for Anu ♡ · 25 December</footer>
+<script>
+function go(n){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('p'+n).classList.add('active');document.querySelectorAll('.links button').forEach((b,i)=>b.classList.toggle('active',i===n));window.scrollTo({top:0,behavior:'smooth'})}
+
+function openWelcome(){
+ const gate=document.getElementById('welcomeGate'),heart=document.getElementById('gateHeart');
+ heart.classList.add('burst');
+ setTimeout(()=>{gate.classList.add('hide');go(0);startPetals();startTyping()},420);
+ setTimeout(()=>gate.remove(),1500);
+ party();
+}
+function startPetals(){
+ const root=document.getElementById('petals');
+ for(let i=0;i<18;i++)setTimeout(()=>{
+  const p=document.createElement('span');p.className='petal';p.textContent=['🌸','🌷','✿','♥'][Math.random()*4|0];
+  p.style.left=Math.random()*100+'%';p.style.setProperty('--fall',(7+Math.random()*8)+'s');
+  p.style.setProperty('--drift',(Math.random()*180-90)+'px');p.style.fontSize=(13+Math.random()*15)+'px';
+  root.appendChild(p);setTimeout(()=>p.remove(),16000);
+ },i*260);
+}
+function startTyping(){
+ const el=document.getElementById('typeLine');if(!el)return;
+ const words='A little world made of smiles, memories, and all the moments worth keeping…';
+ el.textContent='';let i=0;const timer=setInterval(()=>{el.textContent+=words[i++]||'';if(i>=words.length)clearInterval(timer)},48);
+}
+function lightCandle(){
+ const flame=document.getElementById('cakeFlame');
+ if(flame){flame.classList.toggle('off');if(!flame.classList.contains('off'))party();}
+}
+
+function tick(){let now=new Date(),target=new Date(now.getFullYear(),11,25);if(now>=target)target=new Date(now.getFullYear()+1,11,25);let z=target-now;d.textContent=Math.floor(z/86400000);h.textContent=Math.floor(z/3600000%24);m.textContent=Math.floor(z/60000%60);s.textContent=Math.floor(z/1000%60)}tick();setInterval(tick,1000);
+const audio=document.getElementById('music'),mb=document.getElementById('musicBtn');async function toggleMusic(){if(audio.paused){try{await audio.play();mb.textContent='♫ Pause Music'}catch(e){alert('Add a music file named romantic.mp3 beside index.html, then retry.')}}else audio.pause()}audio.onpause=()=>mb.textContent='♫ Play Music';audio.onplay=()=>mb.textContent='♫ Pause Music';
+let opened=false;function openLetter(){if(opened)return;opened=true;envelope.classList.add('open');tap.textContent='♡ A NOTE FROM THE HEART ♡';setTimeout(()=>{letter.classList.add('show');letter.scrollIntoView({behavior:'smooth',block:'center'})},850)}document.getElementById('flipCard').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.currentTarget.classList.toggle('flipped')}};
+envelope.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}};
+
+for(let i=0;i<75;i++){let st=document.createElement('i');st.className='star';st.style.left=Math.random()*100+'%';st.style.top=Math.random()*100+'%';st.style.animationDelay=Math.random()*3+'s';sky.appendChild(st)}
+function heart(){let x=document.createElement('span');x.className='heart';x.textContent=['♡','✦','♥','✨'][Math.random()*4|0];x.style.left=Math.random()*100+'%';x.style.fontSize=12+Math.random()*20+'px';x.style.animationDuration=8+Math.random()*9+'s';sky.appendChild(x);setTimeout(()=>x.remove(),18000)}setInterval(heart,700);
+
+const tinyNotes=['You make ordinary moments feel special. 💗','May good things find you, again and again. 🌷','Keep your dreams close and your worries light. ✨','You deserve kindness, laughter, and peace. 🕊️','May today leave a little sparkle in your heart. 🎀'];
+function rotateNote(id){const el=document.getElementById(id);if(!el)return;el.animate([{opacity:0,transform:'translateY(12px) scale(.97)'},{opacity:1,transform:'translateY(0) scale(1)'}],{duration:650,easing:'ease-out'});el.textContent='“'+tinyNotes[Math.random()*tinyNotes.length|0]+'”'}
+function addMemory(){let v=document.getElementById('memoryInput').value.trim();if(!v)return;let c=document.createElement('div');c.className='card';let p=document.createElement('p');p.textContent='♡ '+v;c.append(p);document.getElementById('memoryNotes').prepend(c);document.getElementById('memoryInput').value=''}
+const wishes=['May you find joy in unexpected places. 🌷','May your courage be bigger than your worries. ✨','May you make time for the things you love. 🎀','May you feel proud of how far you have come. 🌱','May kind people and bright opportunities find you. ☀️','May your year be filled with laughter and peaceful moments. 💗','May you keep believing in your dreams. 🌙'];function drawWish(){document.getElementById('wishText').textContent=wishes[Math.random()*wishes.length|0]}
+function balloonBurst(){for(let i=0;i<22;i++)setTimeout(()=>{let b=document.createElement('i');b.className='balloon';b.style.left=Math.random()*96+'%';b.style.setProperty('--c',['#f77eac','#f3d79b','#bca4ed','#80d5d2','#ffb7a1'][Math.random()*5|0]);b.style.setProperty('--dur',7+Math.random()*6+'s');b.style.setProperty('--dx',(Math.random()*120-60)+'px');balloons.appendChild(b);setTimeout(()=>b.remove(),14000)},i*120)}
+const cv=document.getElementById('confetti'),cx=cv.getContext('2d');let bits=[],running=false;function size(){cv.width=innerWidth;cv.height=innerHeight}size();onresize=size;function party(){balloonBurst();bits=[];for(let i=0;i<220;i++)bits.push({x:Math.random()*cv.width,y:-Math.random()*cv.height,r:3+Math.random()*7,v:2+Math.random()*5,dx:Math.random()*3-1.5,a:Math.random()*360,c:['#ff92bd','#f3d79b','#fff','#e86e9c','#c6a7f4'][Math.random()*5|0]});if(!running){running=true;draw()}}function draw(){cx.clearRect(0,0,cv.width,cv.height);bits.forEach(b=>{cx.save();cx.translate(b.x,b.y);cx.rotate(b.a*Math.PI/180);cx.fillStyle=b.c;cx.fillRect(-b.r/2,-b.r/2,b.r,b.r*1.5);cx.restore();b.y+=b.v;b.x+=b.dx;b.a+=5});bits=bits.filter(b=>b.y<cv.height+15);if(bits.length)requestAnimationFrame(draw);else{running=false;cx.clearRect(0,0,cv.width,cv.height)}}
+
+
+</script></body></html>
